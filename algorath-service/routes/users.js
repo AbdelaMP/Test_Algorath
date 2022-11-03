@@ -1,7 +1,6 @@
-var express = require('express');
+/* var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
   let jsonResponse= {
     "Users" : [
@@ -12,6 +11,26 @@ router.get('/', function(req, res, next) {
     ]
   };
   res.json(jsonResponse);
+});
+
+module.exports = router; */
+
+
+
+var express = require('express');
+var dbAbstractionLayer = require('../public/javascripts/DbAbstractionLayer');
+
+var router = express.Router();
+
+/* GET users listing. */
+router.get('/', function (req, res, next) {
+  
+  dbAbstractionLayer.queryUsersCollection().then(response=>{
+    res.json(response);
+  }).catch(error=>{
+    res.status(500).json({});
+  });
+
 });
 
 module.exports = router;
