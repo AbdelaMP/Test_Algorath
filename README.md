@@ -1,5 +1,5 @@
 This project was done for the test and was built using the MEAN stack (https://www.mongodb.com/mean-stack).
-#FrontEnd 
+# FrontEnd 
 
 ## Client
 
@@ -28,6 +28,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Backend
 
 ## Server
 We will need to install the last version of node for the backend with the version 16.14.0.
