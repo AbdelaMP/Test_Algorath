@@ -1,14 +1,21 @@
 [
-    {"id": 1,
-"name": "Carlos"
+    {"_id": 1,
+        "name": "Carlos",
+        "connections" : []
+
 },
-{"id": 2,
-     "name": "Manuel"
+{"_id": 2,
+     "name": "Manuel",
+     "connections" : []
+
     },
-{"id": 3, 
-    "name": "Pepe"
+{"_id": 3, 
+    "name": "Pepe",
+    "connections" : []
+
 },
-{"id": 4, 
-    "name": "Marcos"
+{"_id": 4, 
+    "name": "Marcos",
+    "connections" : []
 }
 ]

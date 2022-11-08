@@ -10,6 +10,8 @@ import { ListUsersComponent } from './list-users/list-users.component';
 import { CreateUsersComponent } from './create-users/create-users.component';
 import { ConnectUsersComponent } from './connect-users/connect-users.component';
 import { ListConnectionsComponent } from './list-connections/list-connections.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
@@ -25,7 +27,10 @@ import { ListConnectionsComponent } from './list-connections/list-connections.co
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

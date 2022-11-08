@@ -1,11 +1,14 @@
 
-import {Connection} from './connection.model';
-
 export class user {
-    _id?: number;
+    _id?: string;
     name: string;
-    connections: Connection[];
+    connections: string[];
 
-    constructor(  public id: number,public name: string, public connections: Connection[] 
-        {}
+    constructor(   id: string,  name: string,  connections: string[]) 
+        {
+            this._id=id;
+            this.name=name;
+            this.connections =connections;
+
+        }
   }

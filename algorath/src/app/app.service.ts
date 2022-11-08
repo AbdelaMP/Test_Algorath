@@ -11,7 +11,16 @@ export class AppService {
   getUsers(){
     return this.httpClient.get('http://localhost:3000/users');
   }
+
   getUsersConnections(){
+    
+  }
+
+  getUserById(){
+
+  }
+
+  connectUsers(){
     
   }
 }
